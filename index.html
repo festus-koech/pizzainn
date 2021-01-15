@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Pizza Star</title>
+</head>
+<body>
+    <header> 
+        <div class="navbar navbar-light navbar-expand-sm bg-warning">
+            <a href="#" class="navbar-brand text-uppercase font-italic round rounded-circle"><img src="./img/logo.jpeg " alt="logo"
+                    class=" round rounded-circle mt-3" id="logo"></a>
+            <p class="text text-white font-weight-bold text-uppercase font-italic pt-4">welcome to kelvin piza place</p>
+        </div>
+              
+        <div class="row">
+            <div class="pics">
+                <div class="1">
+                <img src="./images/Cheeseless-Pizza-001.jpg" alt="">
+                <p>Margherita</p>
+                </div>
+                <div class="2">
+                    <img src="./images/Cheeseless-Pizza-001.jpg" alt="">
+                    <p>Calzone</p>
+                </div>
+                <div class="3">
+                    <img src="./images/pizza-calzone-basil-leaves-close-up-62820052.jpg" alt="">
+                    <p>Stromboli</p> 
+                </div>
+            </div> 
+            <div class="pics" id="pics2">
+                <div class="5">
+                    <img src="./img/pics/image12.jpeg
+                    " alt="">
+                    <p>Marinara</p>
+                </div>
+                <div class="7">
+                    <img src="./images/Cheeseless-Pizza-001.jpg" alt="">
+                    <p>Neapolitant</p>
+                </div>
+                <div class="8">
+                    <img src="./images/" alt="">
+                    <p>Deep Dish</p>
+                </div>
+
+            </div>
+            <div class="col-md-4 mx-auto py-2">
+                 <form id = "myform">
+                     <div class="order">
+                        <h5 class="order"><b><i>ORDER NOW</i></b></h5>
+                     </div>
+                    <div class="form-group">
+                        <label for="sel1">Select type:</label>
+                        <select class="form-control  m-3" id="type">
+                            <option>Margherita</option>
+                            <option>Calzone</option>
+                            <option>Stromboli</option>
+                            <option>Marinara</option>
+                            <option>Neapolitant</option>
+                            <option>Deep Dish</option>
+                        </select>
+                    </div>
+                        <div class="form-group">
+                            <label for="sel1">Select size:</label>
+                            <select class="form-control m-3" id="size">
+                                <option value="1">Large</option>
+                                <option value="2">Medium</option>
+                                <option value="3">Small</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="sel1">Select crust:</label>
+                            <select class="form-control m-3" id="crust">
+                                <option>Cripsy</option>
+                                <option>Stuffed</option>
+                                <option>Gluten-free</option>
+                                <option>Margherita</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="sel1">Select topping:</label>
+                            <select class="form-control m-3" id="top">
+                                <option>Pepperoni...200</option>
+                                <option>Mushrooms...250</option>
+                                <option>onions...300</option>
+                                <option>Sausage...350</soption>
+                                <option>Bacon...400</option>
+                            </select>
+                        </div>
+                        <div class="form-group " required>
+                            <label for="sel1">Quantity:</label>
+                            <input type="number" id="qty" class="form-control m-3" min="1" required>
+                        </div>
+                        <div class="form-group" required="">
+                            <label for="sel1">Delivery option:</label>
+                            <select class="form-control mt-3" id="pick">
+                                <option value="1">Self pick up</option>
+                                <option value="2">Delivered</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-info btn-block mt-1" >checkout</button>
+                            <button type="reset" class="btn btn-danger btn-block mt-1" >Reset</button>  
+                        </div>
+                </form>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
